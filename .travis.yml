@@ -9,6 +9,6 @@ before_script:
     - 'composer install'
     - 'sudo aptitude -y install php5-cli'
 script:
-    - sudo -E su $USER -c 'php --versionc'
+    - sudo -E su $USER -c 'php --version'
     - 'php createdb.php'
     - './vendor/bin/phpunit application/tests --colors'
