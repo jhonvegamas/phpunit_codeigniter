@@ -13,7 +13,6 @@ before_script:
     - 'sudo mv phpunit_codeigniter /var/www/html'
     - 'cd /var/www/html'
     - 'ls'
-    - 'cd /var/www/html/phpunit_codeigniter'
 
 script:
     - 'php createdb.php'
