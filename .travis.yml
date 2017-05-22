@@ -5,10 +5,10 @@ php:
 services:
     - mysql
 before_script:
-    - script: sudo -E su $USER -c 'php -S localhost:80'
     - 'git clone https://github.com/jhonvegamas/phpunit_codeigniter.git'
     - 'cd phpunit_codeigniter'
     - 'composer install'
 script:
+    - sudo -E su root -c 'php -S localhost:80'
     - 'php createdb.php'
     - './vendor/bin/phpunit application/tests --colors'
