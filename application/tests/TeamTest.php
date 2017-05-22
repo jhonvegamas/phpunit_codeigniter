@@ -9,7 +9,7 @@ class TeamTest extends PHPUnit_Framework_TestCase
     function __construct()
     {
         $this->controller = 'team';
-        $this->base_url = 'http://localhost/phpunit_codeigniter/phpunit/' . $this->controller . 'Test/';
+        $this->base_url = 'http://127.0.0.1:8080/phpunit/' . $this->controller . 'Test/';
     }
 
     function test_inserta_el_equipo()
