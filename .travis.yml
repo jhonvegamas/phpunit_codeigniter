@@ -5,7 +5,7 @@ php:
 services:
     - mysql
 before_script:
-    - 'php -S localhost:80'
+    - 'sudo php -S localhost:80'
     - 'git clone https://github.com/jhonvegamas/phpunit_codeigniter.git'
     - 'cd phpunit_codeigniter'
     - 'composer install'
