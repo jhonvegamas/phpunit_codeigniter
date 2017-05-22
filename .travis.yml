@@ -7,7 +7,8 @@ before_script:
     - 'git clone https://github.com/jhonvegamas/phpunit_codeigniter.git'
     - 'cd phpunit_codeigniter'
     - 'composer install'
+    - 'sudo aptitude install php5-cli'
 script:
-    - sudo -E su $USER -c 'php --version'
+    - sudo -E su $USER -c 'php --versionc'
     - 'php createdb.php'
     - './vendor/bin/phpunit application/tests --colors'
