@@ -10,6 +10,7 @@ before_script:
     - 'cd phpunit_codeigniter'
     - 'composer install'
 script:
-    - 'php -S localhost:80'
+    - 'php --version'
+    - 'phpenv -S localhost:80'
     - 'php createdb.php'
     - './vendor/bin/phpunit application/tests --colors'
