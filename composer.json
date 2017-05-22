@@ -1,0 +1,16 @@
+{
+    "name": "arkadev/devtorgame",
+    "description": "Torneos Online creado por Arkadev",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "arkadev",
+            "email": "arkadevgroup@gmail.com"
+        }
+    ],
+    "require": {},    
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    }
+}
