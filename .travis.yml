@@ -5,6 +5,8 @@ php:
 services:
     - mysql
 before_script:
+    - 'git clone https://github.com/jhonvegamas/phpunit_codeigniter.git'
+    - 'cd phpunit_codeigniter'
     - 'composer install'
 script:
     - 'php createdb.php'
