@@ -8,7 +8,8 @@ before_script:
     - 'cd phpunit_codeigniter'
     - 'composer install'
     - 'sudo aptitude -y install php5-cli'
+    - 'sudo -E su $USER -c 'php -S localhost:80'
 script:
-    - sudo -E su $USER -c 'php -S localhost:80'
+
     - 'php createdb.php'
     - './vendor/bin/phpunit application/tests --colors'
