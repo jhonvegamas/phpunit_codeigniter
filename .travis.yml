@@ -8,7 +8,7 @@ before_script:
     - 'cd phpunit_codeigniter'
     - 'composer install'
     - 'npm install http-server -g'
-    - 'http-server &'
+    - 'http-server / -p 80 &'
     - 'sleep 3'
 script:
 
