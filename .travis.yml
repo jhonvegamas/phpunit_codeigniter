@@ -7,7 +7,7 @@ before_script:
     - 'git clone https://github.com/jhonvegamas/phpunit_codeigniter.git'
     - 'cd phpunit_codeigniter'
     - 'composer install'
-    - 'sudo apt-get install -g http-server'
+    - 'sudo apt-get install http-server'
     - 'http-server &'
     - 'sleep 3'
 script:
