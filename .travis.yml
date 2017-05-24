@@ -15,6 +15,7 @@ before_script:
     - 'cd phpunit_codeigniter'
     - 'composer install'
     - 'cd ..'
+    - 'rm index.html'
     - 'sudo chmod 777 -R phpunit_codeigniter'
     - 'cd phpunit_codeigniter'
     - 'php test.php'
