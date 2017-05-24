@@ -1,4 +1,15 @@
 <?php
+echo "_________________________________________\n";
+  $bd_host = "localhost";
+  $bd_usuario = "root";
+  $bd_password = "";
+  $bd_base = "torneo";
+
+	$con = mysql_connect($bd_host, $bd_usuario, $bd_password);  
+	mysql_select_db($bd_base, $con);
+  echo "_________________________________________\n";
+
+
 function get_file_dir() {
     global $argv;
     $dir = dirname(getcwd() . '/' . $argv[0]);
