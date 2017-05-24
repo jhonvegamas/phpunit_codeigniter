@@ -4,17 +4,16 @@ php:
 services:
     - mysql
 before_script:
+    - 'sudo apt-get -y install php5 libapache2-mod-php5'
+    - 'sudo /etc/init.d/apache2 restart'
+    - 'cd /var/www/html'
     - 'git clone https://github.com/jhonvegamas/phpunit_codeigniter.git'
     - 'cd phpunit_codeigniter'
     - 'composer install'
-    - 'sudo apt-get -y install php5 libapache2-mod-php5'
-    - 'sudo /etc/init.d/apache2 restart'
     - 'cd ..'
-    - 'sudo mkdir /var/www/http/phpunit_codeigniter'
-    - 'sudo mv phpunit_codeigniter /var/www/html/phpunit_codeigniter'
-    - 'cd /var/www/html'
     - 'ls'
-    - 'sudo chmod 777 -R /var/www/html/phpunit_codeigniter'
+    - 'sudo chmod 777 -R phpunit_codeigniter'
+    - 'cd phpunit_codeigniter'
 
 script:
     - 'php createdb.php'
