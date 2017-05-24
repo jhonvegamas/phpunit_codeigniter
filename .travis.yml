@@ -13,9 +13,10 @@ before_script:
     - 'sudo git clone https://github.com/jhonvegamas/phpunit_codeigniter.git'
     - 'sudo chmod -R 777 phpunit_codeigniter/'
     - 'cd phpunit_codeigniter'
-    - 'composer install'    
+    - 'composer install'
+    - 'cd ..'
     - 'sudo chmod 777 -R phpunit_codeigniter'
-    - 'cd phpunit_codeigniter'
+    - 'cd www'
     - 'php test.php'
 
 script:
