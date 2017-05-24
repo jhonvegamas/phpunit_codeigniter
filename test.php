@@ -1,4 +1,15 @@
 <?php
+echo "_________________________________________\n";
+  $bd_host = "sql9.freesqldatabase.com'";
+  $bd_usuario = "sql9176210";
+  $bd_password = "XeSgbE1QAr";
+  $bd_base = "sql9176210";
+
+	$con = mysqli_connect($bd_host, $bd_usuario, $bd_password);
+	mysqli_select_db($bd_base, $con);
+  echo "_________________________________________\n";
+
+
 function get_file_dir() {
     global $argv;
     $dir = dirname(getcwd() . '/' . $argv[0]);
