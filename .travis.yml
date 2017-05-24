@@ -4,6 +4,7 @@ php:
 services:
     - mysql
 before_script:
+    - ''
     - 'sudo apt-get -y install php5 libapache2-mod-php5'
     - 'sudo /etc/init.d/apache2 restart'
     - 'cd /var/www/'
@@ -11,6 +12,7 @@ before_script:
     - 'ls'
     - 'cd html'
     - 'sudo git clone https://github.com/jhonvegamas/phpunit_codeigniter.git'
+    - 'sudo chmod 777 -rwx phpunit_codeigniter'
     - 'cd phpunit_codeigniter'
     - 'composer install'
     - 'cd ..'
