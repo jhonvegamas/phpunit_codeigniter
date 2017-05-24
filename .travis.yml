@@ -12,7 +12,7 @@ before_script:
     - 'cd html'
     - 'sudo git clone https://github.com/jhonvegamas/phpunit_codeigniter.git'
     - 'cd phpunit_codeigniter'
-    - 'sudo composer install'
+    - 'composer install'
     - 'cd ..'
     - 'ls'
     - 'sudo chmod 777 -R phpunit_codeigniter'
