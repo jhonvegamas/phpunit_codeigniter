@@ -11,7 +11,5 @@ function get_file_dir() {
 echo "______________________________________________________________ \n";
 echo file_get_contents('http://127.0.0.1/phpunit_codeigniter/index.php/phpunit/teamTest/eliminar_equipo');
 echo "______________________________________________________________ \n";
-print_r(get_file_dir('http://127.0.0.1'));
-echo "\n";
-print_r(get_file_dir('http://127.0.0.1/phpunit_codeigniter'));
+print_r(get_file_dir('http://127.0.0.1/phpunit_codeigniter/index.php/phpunit/teamTest/eliminar_equipo'));
 echo "\n";
