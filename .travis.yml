@@ -16,10 +16,10 @@ before_script:
     - 'sudo chmod 777 -R phpunit_codeigniter'
     - 'ls'
     - 'cd phpunit_codeigniter'
-    - 'php test.php'
 
 script:
     - 'php createdb.php'
+    - 'php test.php'
     - './vendor/bin/phpunit application/tests --colors'
 email:
     on_success: never # default: change

@@ -5,8 +5,8 @@ echo "_________________________________________\n";
   $bd_password = "";
   $bd_base = "torneo";
 
-	$con = mysql_connect($bd_host, $bd_usuario, $bd_password);  
-	mysql_select_db($bd_base, $con);
+	$con = mysqli_connect($bd_host, $bd_usuario, $bd_password);
+	mysqli_select_db($bd_base, $con);
   echo "_________________________________________\n";
 
 
