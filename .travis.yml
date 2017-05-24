@@ -11,9 +11,9 @@ before_script:
     - 'sudo /etc/init.d/apache2 restart'
     - 'cd ..'
     - 'sudo mv phpunit_codeigniter /var/www/html'
-    - 'cd /var/www/html'
-    - 'rm index.html'
+    - 'cd /var/www/html'    
     - 'ls'
+    - 'chmod 777 -R /var/www/html/phpunit_codeigniter'
 
 script:
     - 'php createdb.php'
