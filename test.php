@@ -1,26 +1,23 @@
 <?php
+function getFruit($conn) {
+  $sql = 'select * from team;';
+  foreach ($conn->query($sql) as $row) {
+      print $row['id_team'] . "\t";
+      print $row['name'] . "\t";
+      print $row['tournament'] . "\n";
+  }
+}
 echo "_________________________________________\n";
-  $bd_host = "sql9.freesqldatabase.com'";
+  $bd_host = "sql9.freesqldatabase.com";
   $bd_usuario = "sql9176210";
   $bd_password = "XeSgbE1QAr";
   $bd_base = "sql9176210";
 
 	$con = mysqli_connect($bd_host, $bd_usuario, $bd_password);
-	mysqli_select_db($bd_base, $con);
+
+  $db_select = mysqli_select_db($con, $bd_base);
+  if (!$db_select) {
+    die("Database selection failed: " . mysqli_error());
+  }
+  getFruit($con);
   echo "_________________________________________\n";
-
-
-function get_file_dir() {
-    global $argv;
-    $dir = dirname(getcwd() . '/' . $argv[0]);
-    $curDir = getcwd();
-    chdir($dir);
-    $dir = getcwd();
-    chdir($curDir);
-    return $dir;
-}
-echo "______________________________________________________________ \n";
-echo file_get_contents('http://127.0.0.1/phpunit_codeigniter/index.php/phpunit/teamTest/eliminar_equipo');
-echo "______________________________________________________________ \n";
-print_r(get_file_dir('http://127.0.0.1/phpunit_codeigniter/index.php/phpunit/teamTest/eliminar_equipo'));
-echo "\n";
