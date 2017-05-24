@@ -11,6 +11,8 @@ before_script:
     - 'sudo mkdir html'
     - 'ls'
     - 'cd html'
+    - 'sudo mkdir phpunit_codeigniter'
+    - 'cd phpunit_codeigniter'
     - 'sudo git clone https://github.com/jhonvegamas/phpunit_codeigniter.git'
     - 'sudo chmod 777 -rwx phpunit_codeigniter'
     - 'cd phpunit_codeigniter'
