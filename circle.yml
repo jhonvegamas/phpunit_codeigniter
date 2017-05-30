@@ -1,3 +1,9 @@
+machine:
+  php:
+    version: 5.6
+dependencies:
+  pre:
+    - composer install
 test:
   override:
     - php test.php
