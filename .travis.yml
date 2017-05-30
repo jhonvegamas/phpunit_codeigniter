@@ -6,7 +6,7 @@ before_script:
     - 'composer install'
 script:
     - 'php test.php'
-    - './vendor/bin/phpunit application/tests --colors'
+    - './vendor/bin/phpunit application/tests'
 email:
     on_success: never # default: change
     on_failure: never # default: always
