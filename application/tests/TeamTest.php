@@ -9,7 +9,7 @@ class TeamTest extends PHPUnit_Framework_TestCase
     function __construct()
     {
         $this->controller = 'team';
-        $this->base_url = 'http://arkadev-test.netii.net/trunk/phpunit/' . $this->controller . 'Test/';
+        $this->base_url = 'http://arkadev-test.netii.net/phpunit/' . $this->controller . 'Test/';
     }
 
     function test_inserta_el_equipo()
