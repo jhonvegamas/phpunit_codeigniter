@@ -4,13 +4,6 @@ php:
     - '5.6'
 before_script:
     - 'composer install'
-    - 'git clone http://github.com/git-ftp/git-ftp.git'
-    - 'cd git-ftp'
-    - 'git checkout master'
-    - 'sudo make install'
-    - 'cd ..'
-    - 'git ftp init -u arkadev-test -p pandalien987 - ftp://files.000webhost.com/public_html'
-    - 'git ftp push -u arkadev-test -p pandalien987 - ftp://files.000webhost.com/public_html'
 script:
     - 'php test.php'
     - './vendor/bin/phpunit application/tests --colors'
