@@ -9,7 +9,6 @@ before_script:
     - 'git checkout master'
     - 'sudo make install'
     - 'cd ..'
-    - 'cd phpunit_codeigniter'
     - 'git ftp init -u arkadev-test -p pandalien987 - ftp://files.000webhost.com/public_html'
     - 'git ftp push -u arkadev-test -p pandalien987 - ftp://files.000webhost.com/public_html'
 script:
