@@ -1,0 +1,4 @@
+test:
+  override:
+    - php test.php
+    - php ./vendor/bin/phpunit application/tests
