@@ -4,6 +4,9 @@ php:
     - '5.6'
 before_script:
     - 'composer install'
+    - 'cd ..'
+    - 'sudo chmod 777 -R phpunit_codeigniter/'
+    - 'cd phpunit_codeigniter'
 script:
     - 'php test.php'
     - './vendor/bin/phpunit application/tests'
